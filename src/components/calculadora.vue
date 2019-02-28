@@ -3,7 +3,7 @@
     <center>
       <h1 color="red--text">{{titulo}}</h1>
     </center>
-    <input type="text" v-model="numero1">
+    <input type="text" v-model="numero1" >
     <input type="text" v-model="numero2">
     <button @click="operacion()">{{boton}}</button>
     <center>
@@ -13,11 +13,10 @@
 </template>
 <script>
 export default {
-  props: ["titulo", "boton", "opc"],
+  props: ["titulo", "boton", "opc", "numero1"],
   name: "calculadora",
   data() {
     return {
-      numero1: null,
       numero2: null,
       resultado: null
     };
