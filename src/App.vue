@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <galery/>
+    
+    <label>Numerador Izquierdo</label>
+    <input type="text" v-model="numero1">
     <calculadora titulo="sumar" boton="+" opc='1' />
     <calculadora titulo="restar" boton="-" opc='2' />
     <calculadora titulo="multiplicar" boton="x" opc='3'/>
@@ -19,7 +22,11 @@ export default {
     HelloWorld,
     calculadora,
     galery
-  }
+  },  data() {
+    return {
+      numero1: null,
+    };
+  },
 }
 </script>
 
